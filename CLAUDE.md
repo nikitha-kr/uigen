@@ -49,7 +49,11 @@ JWT-based, cookie-stored (`auth-token`), server-only (`src/lib/auth.ts`). Anonym
 - No HTML files
 
 ### Database
-Prisma + SQLite (`prisma/dev.db`). Two models: `User` and `Project`. `Project.messages` and `Project.data` store JSON strings (chat history and FS snapshot).
+Prisma + SQLite (`prisma/dev.db`). Two models: `User` and `Project`. `Project.messages` and `Project.data` store JSON strings (chat history and FS snapshot). Reference `prisma/schema.prisma` for the full data structure.
+
+## Code Style
+
+Use comments sparingly. Only comment complex code.
 
 ### Preview
 `PreviewFrame` (`src/components/preview/PreviewFrame.tsx`) renders generated JSX live using `@babel/standalone` for in-browser JSX transformation.
